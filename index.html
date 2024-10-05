@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/sidebar.css">
+    <link rel="stylesheet" href="CSS/Dashboard/dashboard.css">
+    <link rel="stylesheet" href="CSS/Dashboard/dashboardDropdown.css">
+    
+    <title>Solane GUFC</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="header">
+            <img src="assets/SoloneMain.png" alt="Logo" class="sidebar-logo">
+        </div>
+        <nav class="side">
+            <ul>
+                <li>
+                    <img src="assets/dashboard.png" class="sideImg" alt="Dashboard Logo">
+                    <a href="index.html" class="SidebarText">Dashboard</a>
+                </li>
+                <hr>
+                <li class="menu-item">
+                    <img src="assets/products.png" class="sideImg" alt="Products Logo">
+                    <span class="SidebarText">Products</span>
+                    <span class="dropdown-arrow">&#9660;</span>
+                </li>
+                <ul class="submenu">
+                    <li><a href="List Products.html" class="submenu-link">List Product</a></li>
+                    <li><a href="Add Products.html" class="submenu-link">Add Product</a></li>
+                </ul>
+                <hr>
+                <li class="menu-item">
+                    <img src="assets/category.png" class="sideImg" alt="Categories Logo">
+                    <span class="SidebarText">Categories</span>
+                    <span class="dropdown-arrow">&#9660;</span>
+                </li>
+                <ul class="submenu">
+                    <li><a href="Item1.html" class="submenu-link">List Catergory</a></li>
+                    <li><a href="Item2.html" class="submenu-link">Add Category</a></li>
+                </ul>
+                <hr>
+                <li class="menu-item">
+                    <img src="assets/sales.png" class="sideImg" alt="Sales Logo">
+                    <span class="SidebarText">Sales</span>
+                    <span class="dropdown-arrow">&#9660;</span>
+                </li>
+                <ul class="submenu">
+                    <li><a href="Item1.html" class="submenu-link">List Sale</a></li>
+                    <li><a href="Item2.html" class="submenu-link">Add Sale</a></li>
+                </ul>
+                <hr>
+                <li class="menu-item">
+                    <img src="assets/purchase.png" class="sideImg" alt="Purchase Logo">
+                    <span class="SidebarText">Purchase</span>
+                    <span class="dropdown-arrow">&#9660;</span>
+                </li>
+                <ul class="submenu">
+                    <li><a href="Item1.html" class="submenu-link">List Purchase</a></li>
+                    <li><a href="Item2.html" class="submenu-link">Add Purchase</a></li>
+                </ul>
+                <hr>
+                <li class="menu-item">
+                    <img src="assets/returns.png" class="sideImg" alt="Returns Logo">
+                    <span class="SidebarText">Returns</span>
+                    <span class="dropdown-arrow">&#9660;</span>
+                </li>
+                <ul class="submenu">
+                    <li><a href="Item1.html" class="submenu-link">List Returns</a></li>
+                    <li><a href="Item2.html" class="submenu-link">Add Returns</a></li>
+                </ul>
+                <hr>
+                <li class="menu-item">
+                    <img src="assets/people.png" class="sideImg" alt="Customer Logo">
+                    <span class="SidebarText">Customer</span>
+                    <span class="dropdown-arrow">&#9660;</span>
+                </li>
+                <ul class="submenu">
+                    <li><a href="Item1.html" class="submenu-link">Customers</a></li>
+                    <li><a href="Item2.html" class="submenu-link">Add Customer</a></li>
+                    <li><a href="Item1.html" class="submenu-link">Users</a></li>
+                    <li><a href="Item2.html" class="submenu-link">Add Add Users</a></li>
+                    <li><a href="Item1.html" class="submenu-link">Suppliers</a></li>
+                    <li><a href="Item2.html" class="submenu-link">Add Suppliers</a></li>
+                </ul>
+                <hr>
+                <li>
+                    <img src="assets/reports.png" class="sideImg" alt="Reports Logo">
+                    <a href="Reports.html" class="SidebarText">Reports</a>
+                </li>
+                <hr>
+                <li>
+                    <img src="assets/reports.png" class="sideImg" alt="Reports Logo">
+                    <a href="Reports.html" class="SidebarText">Forecasting</a>
+                </li>
+            </ul>
+            
+        </nav>
+    </div>
+
+    <div class="dashboard-content">
+        <content class="TotalCost">
+            <div class="TotalFlex"> <!-- Flex container for the heading and boxes -->
+                <div class="text-container"> <!-- Container for the text elements -->
+                    <h3 class="text-2xl mb-3">Hi Solane, Good Day!</h3>
+                    <p style="font-size: small; ">Your dashboard gives you views of key performance or 
+                        <br>business process.</p>
+                </div>
+        
+                <div class="boxes-container"> 
+                    <div id="total-sales-box" class="total-box small-box">
+                        <div class="box-content"> 
+                            <img src="assets/total sales.png" class="totalImg" alt="TotalSalesImg">
+                            <div class="text-section"> 
+                                <h2 style="font-size: 15px;">Total Sales</h2>
+                                <p id="total-sales">31.50</p> 
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div id="total-cost-box" class="total-box small-box">
+                        <div class="box-content"> <!-- Inner flex container for content -->
+                            <img src="assets/total cost.png" class="totalImg" alt="TotalCostImg">
+                            <div class="text-section"> <!-- Section for text elements -->
+                                <h2 style="font-size: 15px;">Total Cost</h2>
+                                <p id="total-cost">4958</p> <!-- Moved to the bottom -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="product-sold-box" class="total-box small-box">
+                        <div class="box-content"> <!-- Inner flex container for content -->
+                            <img src="assets/product sold.png" class="totalImg" alt="ProductSoldImg">
+                            <div class="text-section"> <!-- Section for text elements -->
+                                <h2 style="font-size: 15px;">Product Sold</h2>
+                                <p id="product-sold">4958</p> <!-- Moved to the bottom -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </content>
+        <br>
+        <div class="overviewContent">
+            <!-- Overview Container -->
+            <div class="overview-container">
+                <div class="header-container">
+                    <div class="Overview-text">
+                        <p>Overview</p>
+                    </div>
+                    <div id="overview" class="thismonth">
+                        <button class="dropdown-button">Today</button>
+                        <div class="arrow"></div>
+                        <ul class="dropdown-content">
+                            <li>Today</li>
+                            <li>This Week</li>
+                            <li>This Month</li>
+                            <li>This Year</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Labels for the Bar Chart -->
+                <div class="chart-labels">
+                    <p><span class="label-circle" style="background-color: #1f77b4;"></span> LABEL 1</p>
+                    <p><span class="label-circle" style="background-color: #ff7f0e;"></span> LABEL 2</p>
+                    <p><span class="label-circle" style="background-color: #2ca02c;"></span> LABEL 3</p>
+                    <p><span class="label-circle" style="background-color: #d62728;"></span> LABEL 4</p>
+                </div>
+        
+                <!-- Placeholder for your bar chart -->
+                <div class="bar-chart" id="bar-chart">
+                    <!-- Bar chart goes here -->
+                </div>
+            </div>
+        
+            <!-- Revenue Vs Cost Container -->
+            <div class="overview-container">
+                <div class="header-container">
+                    <div class="Overview-text">
+                        <p>Revenue Vs Cost.</p>
+                    </div>
+                    <div id="revenue" class="thismonth">
+                        <button class="dropdown-button">This Month</button>
+                        <div class="arrow"></div>
+                        <ul class="dropdown-content">
+                            <li>Today</li>
+                            <li>This Week</li>
+                            <li>This Month</li>
+                            <li>This Year</li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <!-- Labels for the Line Chart -->
+                <div class="chart-labels">
+                    <p><span class="label-circle" style="background-color: #1f77b4;"></span> LABEL 1</p>
+                    <p><span class="label-circle" style="background-color: #ff7f0e;"></span> LABEL 2</p>
+                </div>
+        
+                <!-- Placeholder for your line chart -->
+                <div class="line-chart" id="line-chart">
+                    <!-- Line chart goes here -->
+                </div>
+            </div>
+        </div>
+
+        <div class="TopProducts-containers">
+            <div class="TopProducts-content">
+                <div class="header-container">
+                    <div class="Overview-text">
+                        <p>Top Products</p>
+                    </div>
+                    <div id="topproducts" class="thismonth">
+                        <button class="dropdown-button">This Year</button>
+                        <div class="arrow"></div>
+                        <ul class="dropdown-content">
+                            <li>Today</li>
+                            <li>This Week</li>
+                            <li>This Month</li>
+                            <li>This Year</li>
+                        </ul>
+                    </div>                    
+                </div>
+                <div class="TopProducts-items">
+                    <div class="TopProducts-image">
+                        <div>
+                            <img src="assets/14KG.jpg"><br>
+                            <p class="TopProducts-name">Organic Class</p>
+                            <p class="TopProducts-number">789 Item</p>
+                        </div>
+                        <div>
+                            <img src="assets/22KG.jpg">
+                            <p class="TopProducts-name">Organic Class</p>
+                            <p class="TopProducts-number">789 Item</p>
+                        </div>
+                        <div>
+                            <img src="assets/50KG.jpg">
+                            <p class="TopProducts-name" >Organic Class</p>
+                            <p class="TopProducts-number">789 Item</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="BestItem">
+                <div class="BestItem-header">
+                <h4>Best Item All</h4>
+                <button class="ViewAll">View All</button>
+            </div> 
+            <br>
+                <div class="BestItem-content">
+                    
+                </div>
+            <br>
+            <div class="BestItem-content">
+                    
+            </div>
+                
+        </div>
+    </div>
+        
+
+        
+                    </div>
+                </div>
+            </div>
+        
+        
+        
+
+    <script src="dropdown.js"></script>
+    <script src="Functions/Dashboard/DashboardDropdown.js"></script>
+</body>
+</html>
