@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/sidebar.css">
+    <link rel="stylesheet" href="CSS/Categories/List Categories.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>Solane GUFC</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="header">
+            <img src="assets/SoloneMain.png" alt="Logo" class="sidebar-logo">
+        </div>
+        <nav class="side">
+            <ul>
+                <li>
+                    <img src="assets/dashboard.png" class="sideImg" alt="Dashboard Logo">
+                    <a href="index.html" class="SidebarText">Dashboard</a>
+                </li>
+                <hr>
+                <li class="menu-item">
+                    <img src="assets/products.png" class="sideImg" alt="Products Logo">
+                    <span class="SidebarText">Products</span>
+                    <span class="dropdown-arrow">&#9660;</span>
+                </li>
+                <ul class="submenu">
+                    <li><a href="List Products.html" class="submenu-link">List Product</a></li>
+                    <li><a href="Add Products.html" class="submenu-link">Add Product</a></li>
+                </ul>
+                <hr>
+                <li class="menu-item">
+                    <img src="assets/category.png" class="sideImg" alt="Categories Logo">
+                    <span class="SidebarText">Categories</span>
+                    <span class="dropdown-arrow">&#9660;</span>
+                </li>
+                <ul class="submenu">
+                    <li><a href="List Categories.html" class="submenu-link">List Category</a></li>
+                    <li><a href="Add Categories.html" class="submenu-link">Add Category</a></li>
+                </ul>
+                <hr>
+                <li class="menu-item">
+                    <img src="assets/sales.png" class="sideImg" alt="Sales Logo">
+                    <span class="SidebarText">Sales</span>
+                    <span class="dropdown-arrow">&#9660;</span>
+                </li>
+                <ul class="submenu">
+                    <li><a href="Item1.html" class="submenu-link">List Sale</a></li>
+                    <li><a href="Item2.html" class="submenu-link">Add Sale</a></li>
+                </ul>
+                <hr>
+                <li class="menu-item">
+                    <img src="assets/purchase.png" class="sideImg" alt="Purchase Logo">
+                    <span class="SidebarText">Purchase</span>
+                    <span class="dropdown-arrow">&#9660;</span>
+                </li>
+                <ul class="submenu">
+                    <li><a href="Item1.html" class="submenu-link">List Purchase</a></li>
+                    <li><a href="Item2.html" class="submenu-link">Add Purchase</a></li>
+                </ul>
+                <hr>
+                <li class="menu-item">
+                    <img src="assets/returns.png" class="sideImg" alt="Returns Logo">
+                    <span class="SidebarText">Returns</span>
+                    <span class="dropdown-arrow">&#9660;</span>
+                </li>
+                <ul class="submenu">
+                    <li><a href="Item1.html" class="submenu-link">List Returns</a></li>
+                    <li><a href="Item2.html" class="submenu-link">Add Returns</a></li>
+                </ul>
+                <hr>
+                <li class="menu-item">
+                    <img src="assets/people.png" class="sideImg" alt="Customer Logo">
+                    <span class="SidebarText">Customer</span>
+                    <span class="dropdown-arrow">&#9660;</span>
+                </li>
+                <ul class="submenu">
+                    <li><a href="Item1.html" class="submenu-link">Customers</a></li>
+                    <li><a href="Item2.html" class="submenu-link">Add Customer</a></li>
+                    <li><a href="Item1.html" class="submenu-link">Users</a></li>
+                    <li><a href="Item2.html" class="submenu-link">Add Users</a></li>
+                    <li><a href="Item1.html" class="submenu-link">Suppliers</a></li>
+                    <li><a href="Item2.html" class="submenu-link">Add Suppliers</a></li>
+                </ul>
+                <hr>
+                <li>
+                    <img src="assets/reports.png" class="sideImg" alt="Reports Logo">
+                    <a href="Reports.html" class="SidebarText">Reports</a>
+                </li>
+                <hr>
+                <li>
+                    <img src="assets/forecasting.png" class="sideImg" alt="Forecasting Logo">
+                    <a href="Forecasting.html" class="SidebarText">Forecasting</a>
+                </li>
+            </ul>
+            
+        </nav>
+    </div>
+   
+    <div class="ListCategory-content">
+        <div class="ListCategory-header">
+            <div class="header-text">
+                <h3>Category List</h3>
+                <p>Use the category list to describe your overall core business from the provided list.<br>
+                    Click the name of the category where you want to add a list item.</p>
+            </div>
+            <button class="ListCategory-button"> +&nbsp;&nbsp;Add Category</button>
+        </div>
+        <br>
+    
+        <!-- Responsive Table Container -->
+        <div class="table-responsive">
+            <table class="ListCategory-table">
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" aria-label="Select All"></th>
+                        <th>Image</th>
+                        <th>Code</th>
+                        <th>Category</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Select"><input type="checkbox" aria-label="Select Organic Cream"></td>
+                        <td data-label="Image" class="image-cell">
+                            <div class="image-wrapper">
+                                <img src="assets/14KG.jpg" alt="Organic Cream" class="category-image"> Organic Cream
+                            </div>
+                        </td>
+                        <td data-label="Code">CREM01</td>
+                        <td data-label="Category">Beauty</td>
+                        <td data-label="Action" class="action-buttons">
+                            <button class="view-btn" aria-label="View Details"><i class="fa fa-eye"></i></button>
+                            <button class="edit-btn" aria-label="Edit Category"><i class="fa fa-pencil-alt"></i></button>
+                            <button class="delete-btn" aria-label="Delete Category"><i class="fa fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Select"><input type="checkbox" aria-label="Select Rain Umbrella"></td>
+                        <td data-label="Image" class="image-cell">
+                            <div class="image-wrapper">
+                                <img src="assets/22KG.jpg" alt="Rain Umbrella" class="category-image"> Rain Umbrella
+                            </div>
+                        </td>
+                        <td data-label="Code">UM01</td>
+                        <td data-label="Category">Grocery</td>
+                        <td data-label="Action" class="action-buttons">
+                            <button class="view-btn" aria-label="View Details"><i class="fa fa-eye"></i></button>
+                            <button class="edit-btn" aria-label="Edit Category"><i class="fa fa-pencil-alt"></i></button>
+                            <button class="delete-btn" aria-label="Delete Category"><i class="fa fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Select"><input type="checkbox" aria-label="Select Serum Bottle"></td>
+                        <td data-label="Image" class="image-cell">
+                            <div class="image-wrapper">
+                                <img src="assets/50KG.jpg" alt="Serum Bottle" class="category-image"> Serum Bottle
+                            </div>
+                        </td>
+                        <td data-label="Code">SEM01</td>
+                        <td data-label="Category">Beauty</td>
+                        <td data-label="Action" class="action-buttons">
+                            <button class="view-btn" aria-label="View Details"><i class="fa fa-eye"></i></button>
+                            <button class="edit-btn" aria-label="Edit Category"><i class="fa fa-pencil-alt"></i></button>
+                            <button class="delete-btn" aria-label="Delete Category"><i class="fa fa-trash"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+            </div>
+        </div>
+    </div>
+
+<script src="dropdown.js"></script>
+</body>
+</html>
